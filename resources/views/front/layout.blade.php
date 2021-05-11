@@ -177,7 +177,7 @@
 
     <!-- content
     ================================================== -->
-    <section class="s-content @if(currentRoute('home')) s-content--no-top-padding @endif" style="padding-top: 70px" >
+    <section class="s-content @if(currentRoute('home')) s-content--no-top-padding @endif" style="padding-top: 70px;background:rgb(32, 32, 32);">
 
         @yield('main')
 
@@ -206,11 +206,7 @@
                     <h5>@lang('About Our Site')</h5>
 
                     <p>
-                    Lorem ipsum Ut velit dolor Ut labore id fugiat in ut
-                    fugiat nostrud qui in dolore commodo eu magna Duis
-                    cillum dolor officia esse mollit proident Excepteur
-                    exercitation nulla. Lorem ipsum In reprehenderit
-                    commodo aliqua irure.
+                    se site d'article à etait fait par un etudiant en developement web pour sont projet de stage a brest en 2021.
                     </p>
 
                 </div>

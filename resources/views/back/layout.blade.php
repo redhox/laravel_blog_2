@@ -30,11 +30,11 @@
     }
 </style>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini" style="color:white;">
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand " style="background:rgb(32, 32, 32);border:transparent;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -70,7 +70,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background:rgb(32, 32, 32);">
     <!-- Sidebar -->
     <div class="sidebar">
 
@@ -147,7 +147,7 @@
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer" style="background:rgb(32, 32, 32);border-top:transparent;">
     <!-- Default to the left -->
     <strong>Copyright &copy; 2021 {{ config('app.name', 'Laravel') }}.</strong>
   </footer>

@@ -106,6 +106,39 @@
             color: rgb(255, 255, 255);
             text-shadow: 1px 1px 2px rgb(0, 0, 0);
         }
+        @media screen and (max-width: 700px) {
+            #hero_main > div{
+                border-radius: 0;
+            }
+            .image{
+                border-radius: 0;
+            }
+            #hero_main > div:nth-of-type(1){
+                position: absolute;
+                height: 53%;
+                width: 98%;
+                left: 1%;
+                bottom: 45%
+            }
+            #hero_main > div:nth-of-type(2){
+                position: absolute;
+                height: 21%;
+                width: 98%;
+                left: 1%;
+                bottom: 23%
+            }
+            #hero_main > div:nth-of-type(3){
+                position: absolute;
+                height: 21%;
+                width: 98%;
+                left: 1%;
+                bottom: 1%
+            }
+            #hero_main > div:nth-of-type(4){display:none;}
+            #hero_main > div:nth-of-type(5){display:none;}
+
+        }
+
     </style>
 
 
