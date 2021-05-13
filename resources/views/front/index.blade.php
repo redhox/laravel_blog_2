@@ -38,7 +38,7 @@
         .image > a{
             height: 100%;
             width: 100%;
-        }
+   	}
         .resume{
             position: absolute;
             display: none;
@@ -100,7 +100,12 @@
             position: absolute;
             bottom: 0;
             left: 15px;
-        }
+	}
+	#hero_main > div > div > h1{
+	background:rgba(0,0,0,0.7);
+            border-radius: 10px;
+	}
+
         .byline-hero{
             margin-left: 110px;
             color: rgb(255, 255, 255);
@@ -113,6 +118,19 @@
             .image{
                 border-radius: 0;
             }
+	    .nom{
+	    	left:0;
+		bottom:0;
+		
+	    }
+	    h1{
+	   	 border-radius: 0px;
+		margin-bottom:0;
+
+	    }
+	    .entry__meta{
+		display:none;
+	    }
             #hero_main > div:nth-of-type(1){
                 position: absolute;
                 height: 53%;
@@ -154,13 +172,13 @@
             <div class="entry__excerpt resume"><p  >{{ $hero->excerpt }}</p></div>
             <div class="entry__header nom" style="z-index: 2">
                 <h1 class="entry__title"><a class="link-hero"  href="{{ route('posts.display', $hero->slug) }}">{{ $hero->title }}</a></h1>
-                <div class="entry__meta">
+               <!--  <div class="entry__meta">
                     <span class="byline byline-hero"">@lang('By:')
                         <span class='author'>
                             <a class="link-hero" href="{{ route('author', $hero->user->id) }}">{{ $hero->user->name }}</a>
                         </span>
                     </span>
-                </div>
+                </div> -->
             </div>
             <!--
             <div class="entry__excerpt"><p>{{ $hero->excerpt }}</p></div>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@lang('Administration')</title>
-
+	
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
@@ -12,6 +12,11 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.5/css/adminlte.min.css" />
   @yield('css')
+  <!-- favicons
+    ================================================== -->
+
+    <link rel="icon" type="image/png" href="{{ asset('icon-asae.svg') }}">
+
 </head>
 
 <style>
@@ -28,6 +33,9 @@
         background-color: rgb(173, 173, 173);
 
     }
+    .table-hover{
+	color: red;
+	}
 </style>
 
 <body class="hold-transition sidebar-mini" style="color:white;">

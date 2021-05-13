@@ -29,12 +29,24 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
-    <style>body{  background-color: rgb(48, 48, 48); }</style>
+    <link rel="icon" type="image/png" href="{{ asset('icon-asae.svg') }}">
+
+    <style>body{  background-color: rgb(48, 48, 48);
+	
+
+
+		}
+		h1{
+        color: white;
+    }
+    label{
+        color: white;
+    }
+    textarea{
+        color: white;
+    }
+   </style>
 </head>
 
 <body id="top">
@@ -53,7 +65,7 @@
 
         <div class="s-header__logo">
             <a class="logo" href="{{ route('home') }}">
-                <img src="{{ asset('images/logo.svg') }}" alt="Homepage">
+                <img src="{{ asset('images/fibonacci-spiral.jpg') }}" alt="Homepage" style="height:50px; margin-top: 10px; " >
             </a>
         </div>
 
@@ -74,9 +86,6 @@
                                 <li><a href="{{ route('category', $category->slug) }}">{{ $category->title }}</a></li>
                             @endforeach
                         </ul>
-                    </li>
-                    <li {{ currentRoute('contacts.create') }}>
-                        <a href="{{ route('contacts.create') }}" title="">@lang('Contact')</a>
                     </li>
                     @guest
                         @request('register')
@@ -177,7 +186,7 @@
 
     <!-- content
     ================================================== -->
-    <section class="s-content @if(currentRoute('home')) s-content--no-top-padding @endif" style="padding-top: 70px;background:rgb(32, 32, 32);">
+    <section class="s-content @if(currentRoute('home')) s-content--no-top-padding @endif" style="padding-top: 70px;background:white;">
 
         @yield('main')
 
@@ -206,7 +215,8 @@
                     <h5>@lang('About Our Site')</h5>
 
                     <p>
-                    se site d'article à etait fait par un etudiant en developement web pour sont projet de stage a brest en 2021.
+                    Ce site d'article à etait fait par un etudiant en developement web pour son projet de stage à brest en 2021.<br>
+		    "Asae" est pour (Another Site d'Article Étudiant).
                     </p>
 
                 </div>

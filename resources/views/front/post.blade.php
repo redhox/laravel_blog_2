@@ -4,7 +4,7 @@
 
 <!-- post
 ================================================== -->
-
+	<style>input { color:white;}ul{margin-bottom:0;}li{color:black;}pre{margin-bottom:0;}</style>
     <div class="s-content__post-thumb" style="background-image:url({{ getImage($post) }});background-position: center;background-size:cover;background-repeat: no-repeat; height:90vh;min-height:600px;">
 
     </div>
@@ -12,12 +12,12 @@
 <div class="row" style="margin-top: -210px;">
   <div class="column large-12">
 
-      <article class="s-content__entry format-standard" style="background:white;border-top-right-radius: 3px;border-top-left-radius:3px;">
+      <article class="s-content__entry format-standard" style="background:rgb(60,61,61);color:white;border-top-right-radius: 3px;border-top-left-radius:3px;box-shadow: -7px -15px 0px rgba(0,0,0,0.5);padding:1%; ">
 
 
 
           <div class="s-content__entry-header" >
-              <h1 class="s-content__title s-content__title--post">{{ $post->title }}</h1>
+              <h1 class="s-content__title s-content__title--post" >{{ $post->title }}</h1>
           </div>
 
           <div class="s-content__primary">

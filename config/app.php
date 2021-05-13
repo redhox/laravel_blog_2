@@ -246,8 +246,8 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'description' => 'The best blog in the world',
-    'author' => 'The best author',
+    'description' => "ANOTHER site d'article etudiant",
+    'author' => 'Morgan COULM',
 
     /*
     |--------------------------------------------------------------------------
