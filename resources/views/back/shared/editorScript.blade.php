@@ -39,13 +39,41 @@
 
         $('#lfm').filemanager('image');
 
+        // lien title - slug
         $('#slug').keyup(function () {
           $(this).val(getSlug($(this).val()))
         })
-
         $('#title').keyup(function () {
           $('#slug').val(getSlug($(this).val()))
         })
+
+         // lien title - seo_title
+        $('#seo_title').keyup(function () {
+          $(this).val(getSlug($(this).val()))
+        })
+        $('#title').keyup(function () {
+          $('#seo_title').val(getSlug($(this).val()))
+        })
+
+         // lien extrait - meta description
+        $('#meta_description').keyup(function () {
+          $(this).val(getSlug($(this).val()))
+        })
+        $('#excerpt').keyup(function () {
+          $('#meta_description').val(getSlug($(this).val()))
+        })
+
+         // lien etiquettes - meta keywords
+         $('#meta_keywords').keyup(function () {
+          $(this).val(getSlug($(this).val()))
+        })
+        $('#tags').keyup(function () {
+          $('#meta_keywords').val(getSlug($(this).val()))
+        })
+
+
+
+
     });
 
     CKEDITOR.replace('body', { customConfig: '{{ asset('js/ckeditor.js') }}' });

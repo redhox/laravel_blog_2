@@ -68,6 +68,7 @@
             $('#title').keyup(function () {
               $('#slug').val(getSlug($(this).val()))
             })
+
         });
 
     </script>

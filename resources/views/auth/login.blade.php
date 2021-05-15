@@ -2,6 +2,8 @@
 
 @section('main')
     <div class="row row-x-right s-styles">
+	<div class="column large-6 tab-12" style="background-image:url(images/power-by-debian.jpg);background-size:contain;background-repeat:no-repeat;background-position: center;">
+	</div>
         <div class="column large-6 tab-12">
 
             <!-- Session Status -->

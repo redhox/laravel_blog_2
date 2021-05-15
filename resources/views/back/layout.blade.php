@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@lang('Administration')</title>
-	
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
@@ -27,14 +27,14 @@
         color: white;
     }
     .card{
-        background-color: rgb(236, 236, 236);
+        background-color: rgb(105, 105, 105);
     }
     input{
         background-color: rgb(173, 173, 173);
 
     }
-    .table-hover{
-	color: red;
+    tbody:hover > tr > td {
+	color: rgb(159, 255, 167);
 	}
 </style>
 

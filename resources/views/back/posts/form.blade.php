@@ -6,7 +6,7 @@
             height: 100%;
             width: 100%;
         }
-       
+
     </style>
 @endsection
 
@@ -154,21 +154,21 @@
                     <x-back.input
                         title='META Description'
                         name='meta_description'
-                        :value="isset($post) ? $post->meta_description : 'vide'"
+                        :value="isset($post) ? $post->meta_description : ''"
                         input='textarea'
                         :required="true">
                     </x-back.input>
                     <x-back.input
                         title='META Keywords'
                         name='meta_keywords'
-                        :value="isset($post) ? $post->meta_keywords : 'vide'"
+                        :value="isset($post) ? $post->meta_keywords : ''"
                         input='textarea'
                         :required="true">
                     </x-back.input>
                     <x-back.input
                         title='SEO Title'
                         name='seo_title'
-                        :value="isset($post) ? $post->seo_title : 'vide'"
+                        :value="isset($post) ? $post->seo_title : ''"
                         input='text'
                         :required="true">
                     </x-back.input>

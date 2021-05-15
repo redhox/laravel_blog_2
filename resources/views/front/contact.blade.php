@@ -8,10 +8,10 @@
         <div class="column large-12">
 
             <div class="s-content__entry-header">
-                <h1 class="s-content__title">@lang('Get In Touch With Us')</h1>
+                <h1 class="s-content__title" style="color: black;">@lang('Get In Touch With Us')</h1>
             </div>
 
-            <div class="row row-x-center">
+            <div class="row row-x-left">
                 <div class="column large-6 tab-12">
 
                   <!-- Session Status -->
@@ -54,10 +54,13 @@
                   </form>
 
                 </div>
+                <div class="column large-6 tab-12" style="background-image:url(/images/mail.png);background-size:contain;background-repeat:no-repeat;background-position: center;">
+
+                </div>
             </div>
 
-
         </div>
+
     </div>
 
 @endsection
