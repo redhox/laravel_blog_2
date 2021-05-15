@@ -33,8 +33,8 @@
             height: 100%;
             width: 100%;
             border-radius: 40px;
-            transition: 0.4s;
-	    
+            transition: 0.5s;
+            box-shadow:inset 0px -20px 15px rgba(0,0,0,0.5);
         }
         .image > a{
             height: 100%;

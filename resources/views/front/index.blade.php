@@ -33,7 +33,9 @@
             height: 100%;
             width: 100%;
             border-radius: 40px;
-            transition: 0.4s;
+            transition: 0.7s;
+            box-shadow:inset rgba(0, 0, 0, 0.595) 0px -100px 100px ;
+
         }
         .image > a{
             height: 100%;
@@ -54,8 +56,8 @@
             box-shadow: black 8px 5px 5px ;
         }
         #hero_main > div:hover .image{
+            box-shadow:inset rgba(0, 0, 0, 0.795) 0px -150px 100px ;
 
-            filter: blur(15px);
 
         }
         #hero_main > div:nth-of-type(1){
@@ -121,7 +123,7 @@
 	    .nom{
 	    	left:0;
 		bottom:0;
-		
+
 	    }
 	    h1{
 	   	 border-radius: 0px;

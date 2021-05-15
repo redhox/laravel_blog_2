@@ -29,7 +29,7 @@
                         type="checkbox"
                         name="remember_me"
                         {{ old('remember_me') ? 'checked' : '' }}>
-                    <span class="label-text">@lang('Remember me')</span>
+                    <span class="label-text" style="color: black">@lang('Remember me')</span>
                 </label>
 
                 <x-auth.submit title="Login" class="rounded-sm" />
