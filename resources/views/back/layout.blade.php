@@ -12,6 +12,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.5/css/adminlte.min.css" />
   @yield('css')
+  <link rel="stylesheet" href="{{ asset('css/morgan_css.css') }}">
   <!-- favicons
     ================================================== -->
 
@@ -19,30 +20,12 @@
 
 </head>
 
-<style>
-    .content-wrapper{
-        background-color: rgb(48, 48, 48);
-    }
-    h1{
-        color: white;
-    }
-    .card{
-        background-color: rgb(105, 105, 105);
-    }
-    input{
-        background-color: rgb(173, 173, 173);
 
-    }
-    tbody:hover > tr > td {
-	color: rgb(159, 255, 167);
-	}
-</style>
-
-<body class="hold-transition sidebar-mini" style="color:white;">
+<body class="hold-transition sidebar-mini" >
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand " style="background:rgb(32, 32, 32);border:transparent;">
+  <nav class="main-header navbar navbar-expand"id="b-layout-navbar">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -67,7 +50,7 @@
             @lang('Logout')
         </a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block" style="position: absolute;right:0;">
+      <li class="nav-item d-none d-sm-inline-block" id="b-layout-navitem" >
         <a href="{{ route('profile') }}"class="nav-link">{{ auth()->user()->name }}</a>
     </li>
 
@@ -78,7 +61,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background:rgb(32, 32, 32);">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="b-layout-mainsidebar">
     <!-- Sidebar -->
     <div class="sidebar">
 
@@ -155,7 +138,7 @@
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  <footer class="main-footer" style="background:rgb(32, 32, 32);border-top:transparent;">
+  <footer class="main-footer" id="b-layout-footer">
     <!-- Default to the left -->
     <strong>Copyright &copy; 2021 {{ config('app.name', 'Laravel') }}.</strong>
   </footer>

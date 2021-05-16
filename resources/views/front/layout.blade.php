@@ -20,6 +20,7 @@
     ================================================== -->
     <link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/morgan_css.css') }}">
     @yield('style')
 
     <!-- script
@@ -32,21 +33,7 @@
 
     <link rel="icon" type="image/png" href="{{ asset('icon-asae.svg') }}">
 
-    <style>body{  background-color: rgb(48, 48, 48);
-	
 
-
-		}
-		h1{
-        color: white;
-    }
-    label{
-        color: white;
-    }
-    textarea{
-        color: white;
-    }
-   </style>
 </head>
 
 <body id="top">
@@ -61,17 +48,17 @@
 
     <!-- header
     ================================================== -->
-    <header class="s-header s-header--opaque" style="height: 70px">
+    <header class="s-header s-header--opaque" id="f-layout-header">
 
         <div class="s-header__logo">
             <a class="logo" href="{{ route('home') }}">
-                <img src="{{ asset('images/fibonacci-spiral.jpg') }}" alt="Homepage" style="height:50px; margin-top: 10px; " >
+                <img src="{{ asset('images/fibonacci-spiral.jpg') }}" alt="Homepage" id="f-layout-header-image"  >
             </a>
         </div>
 
         <div class="row s-header__navigation" >
 
-            <nav class="s-header__nav-wrap" style="margin-right:10px;">
+            <nav class="s-header__nav-wrap" id="f-layout-nav" >
 
                 <h3 class="s-header__nav-heading h6">@lang('Navigate to')</h3>
 
@@ -195,15 +182,7 @@
 
     <!-- footer
     ================================================== -->
-    <style>
-        h5{
-            color: white;
-        }
-        .s-footer{
-            color: gray;
-        }
-
-    </style>
+    
     <footer class="s-footer" >
 
         <div class="s-footer__main">
