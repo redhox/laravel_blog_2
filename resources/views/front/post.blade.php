@@ -5,28 +5,29 @@
 <!-- post
 ================================================== -->
 
-    <div class="s-content__post-thumb"id="post-image" style="background-image:url({{ getImage($post) }});">
 
-    </div>
+
 
 <div class="row" id="post-main" >
-  <div class="column large-12">
+  <div class="column large-9">
 
       <article class="s-content__entry format-standard" id="post-article" >
 
 
 
-          <div class="s-content__entry-header" >
-              <h1 class="s-content__title s-content__title--post" >{{ $post->title }}</h1>
-          </div>
+
 
           <div class="s-content__primary">
-
+            <h1 class="s-content__title s-content__title--post" >{{ $post->title }}</h1>
+            <p  id="extrait">{{ $post->excerpt }}</p>
+            <div class="s-content__post-thumb"id="post-image" style="background-image:url({{ getImage($post) }});">
+            </div>
               <div class="s-content__entry-content">
 
                   {!! $post->body !!}
 
               </div>
+
 
               <div class="s-content__entry-meta">
 
@@ -65,27 +66,29 @@
 
               </div>
 
-              <div class="s-content__pagenav">
-                  @isset($post->previous)
-                      <div class="prev-nav">
-                          <a href="{{ route('posts.display', $post->previous->slug) }}" rel="prev">
-                              <span>@lang('Previous')</span>
-                              {{ $post->previous->title }}
-                          </a>
-                      </div>
-                  @endisset
-                  @isset($post->next)
-                      <div class="next-nav">
-                          <a href="{{ route('posts.display', $post->next->slug) }}" rel="next">
-                              <span>@lang('Next One')</span>
-                              {{ $post->next->title }}
-                          </a>
-                      </div>
-                  @endisset
-               </div>
+
 
           </div>
       </article>
+
+      <div class="s-content__pagenav">
+        @isset($post->previous)
+            <div class="prev-nav">
+                <a href="{{ route('posts.display', $post->previous->slug) }}" rel="prev">
+                    <span>@lang('Previous')</span>
+                    {{ $post->previous->title }}
+                </a>
+            </div>
+        @endisset
+        @isset($post->next)
+            <div class="next-nav">
+                <a href="{{ route('posts.display', $post->next->slug) }}" rel="next">
+                    <span>@lang('Next One')</span>
+                    {{ $post->next->title }}
+                </a>
+            </div>
+        @endisset
+     </div>
 
   </div>
 </div>

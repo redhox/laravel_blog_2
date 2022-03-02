@@ -181,7 +181,7 @@
 
     <!-- content
     ================================================== -->
-    <section class="s-content @if(currentRoute('home')) s-content--no-top-padding @endif" style="padding-top: 70px;background:white;">
+    <section class="s-content @if(currentRoute('home')) s-content--no-top-padding @endif" style="padding-top: 100px;">
 
         @yield('main')
 
