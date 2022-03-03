@@ -4558,9 +4558,8 @@ body.search-is-visible {
 }
 
 .s-content__entry-meta, .s-content__pagenav {
-    -ms-flex: 0 0 210px;
-    -webkit-box-flex: 0;
-    flex: 0 0 210px;
+
+
     max-width: 210px;
     position: -webkit-sticky;
     position: sticky;
@@ -4634,7 +4633,9 @@ body.search-is-visible {
     font-size: var(--text-md);
     font-weight: 300;
     line-height: var(--vspace-1);
-    padding-left: 3.2rem;
+    position: absolute;
+    right:20%;
+    top: 30%;
 }
 
 .s-content__pagenav>div {
