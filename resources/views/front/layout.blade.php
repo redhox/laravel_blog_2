@@ -55,12 +55,7 @@
                 <a  href="{{ route('home') }}">
                     <img src="{{ asset('images/fibonacci-spiral.jpg') }}" alt="Homepage" id="f-layout-header-image"  >
                 </a>
-                <a  href="https://koel.morgan-coulm.fr">
-                    <img src="https://koel.morgan-coulm.fr/images/logo.svg?8a2f5cec8d12d85f91ae82ef106ecb28" alt="Homepage" id="f-layout-header-image"  >
-                </a>
-                <a  href="https://nextcloud.morgan-coulm.fr">
-                    <img src="https://nextcloud.morgan-coulm.fr/index.php/svg/core/logo/logo?color=ffffff&v=1" alt="Homepage" id="f-layout-header-image"  >
-                </a>
+                
             </div>
         </div>
 

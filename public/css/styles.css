@@ -4824,7 +4824,7 @@ body.search-is-visible {
 }
 
 .s-footer a {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .s-footer h5 {
@@ -4858,9 +4858,6 @@ body.search-is-visible {
     list-style: none;
 }
 
-.s-footer__main ul a {
-    color: var(--color-gray-14);
-}
 
 .s-footer__main ul a:hover, .s-footer__main ul a:focus {
     color: black;
