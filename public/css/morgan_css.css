@@ -29,7 +29,7 @@
     .interlink > a > img{
         height: 70px;
     }
-    
+
     .content-wrapper{
         background-color: rgb(48, 48, 48);
     }
@@ -54,6 +54,10 @@
     h1{
         color: white;
         margin-left: 20px;
+    }
+    .s-content__entry-content > ul{
+        max-width: 90%;
+        margin-left : 0;
     }
     #extrait{
         margin-left: 35px;
