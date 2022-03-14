@@ -198,6 +198,7 @@
 
                     <p>
                     Ce site d'article est un projet web personel en developement depuis 2021.<br>
+                    I'm sure of everything I do, except some of it
                     </p>
 
                 </div>
