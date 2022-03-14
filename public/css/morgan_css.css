@@ -222,7 +222,14 @@ background:rgba(0,0,0,0.7);
 input{ color:white;}
 ul{margin-bottom:0;}
 li{color:black;}
-pre{margin-bottom:0;}
+pre{
+
+    margin-bottom: 10px;
+    color: white;
+    background-color: #1e1d1d;
+    border-radius: 10px;
+    max-width: 90%;
+}
 s-content__entry-meta > div > a{color:azure;}
 #post-article{
     background:rgb(41, 41, 41);

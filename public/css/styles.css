@@ -4551,6 +4551,7 @@ body.search-is-visible {
     flex: 1 1 0%;
     padding: 0 4.8rem;
     border-left: 1px solid var(--color-border);
+    width: 100%;
 }
 
 .s-content__page-content {
