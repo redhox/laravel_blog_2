@@ -55,7 +55,7 @@
                 <a  href="{{ route('home') }}">
                     <img src="{{ asset('images/fibonacci-spiral.jpg') }}" alt="Homepage" id="f-layout-header-image"  >
                 </a>
-                
+
             </div>
         </div>
 
@@ -197,8 +197,7 @@
                     <h5>@lang('About Our Site')</h5>
 
                     <p>
-                    Ce site d'article à etait fait par un etudiant en developement web pour son projet de stage à brest en 2021.<br>
-		    "Asae" est pour (Another Site d'Article Étudiant).
+                    Ce site d'article est un projet web personel en developement depuis 2021.<br>
                     </p>
 
                 </div>
