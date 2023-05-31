@@ -8,7 +8,8 @@ RUN apt update && apt install -y \
     libzip-dev \
     zip \
     zlib1g-dev \
-    npm
+    npm \
+    git
 
 # Installer les extensions PHP
 RUN docker-php-ext-install \
@@ -46,6 +47,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Définir le répertoire de travail
 WORKDIR /var/www/laravel
 
+RUN git clone https://github.com/redhox/laravel_blog_2.git .
 # Copier les fichiers de l'application dans le conteneur
 COPY . .
 COPY apacheconf /etc/apache2/sites-available/000-default.conf
