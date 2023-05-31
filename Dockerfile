@@ -49,7 +49,6 @@ RUN git clone https://github.com/redhox/laravel_blog_2.git /var/www/laravel/
 WORKDIR /var/www/laravel
 
 # Copier les fichiers de l'application dans le conteneur
-COPY . .
 COPY apacheconf /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 RUN service apache2 restart
