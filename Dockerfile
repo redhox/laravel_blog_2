@@ -47,7 +47,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN git clone https://github.com/redhox/laravel_blog_2.git /var/www/laravel
 # Définir le répertoire de travail
 WORKDIR /var/www/laravel
-
+RUN cp .env.example .env
 # Copier les fichiers de l'application dans le conteneur
 COPY apacheconf /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
@@ -55,6 +55,7 @@ RUN service apache2 restart
 # Installer les dépendances de l'application avec Composer et npm
 RUN composer install && composer fund && npm install
 
+RUN php artisan key:generate
 # Exécuter la migration de la base de données
 #RUN php artisan migrate --force
 
