@@ -1,0 +1,4 @@
+[submodule "laravelblog"]
+    path = laravel_blog              
+    url = https://github.com/redhox/laravel_blog
+
