@@ -2,8 +2,6 @@ FROM php:8.0-apache
 
 # Mettre à jour les paquets et installer les dépendances
 RUN apt update && apt install -y apache2 git
-RUN git clone https://github.com/redhox/laravel_blog_2.git
-RUN cd /laravel_blog_2
 RUN apt update && apt install -y \
     libicu-dev \
     libpq-dev \
