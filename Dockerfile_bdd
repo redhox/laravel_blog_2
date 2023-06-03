@@ -6,7 +6,7 @@ RUN yum update -y && yum install -y curl
 USER mysql
 
 # Copier le fichier init.sql dans le répertoire /docker-entrypoint-initdb.d
-RUN curl -o /docker-entrypoint-laravel.d/laravel.sql https://github.com/redhox/laravel_blog_2/laravel.sql
+RUN curl -o /docker-entrypoint-laravel.d/laravel.sql https://github.com/redhox/laravel_blog_2/blob/master/laravel.sql
 
 # Exposer le port 3306
 EXPOSE 3306
