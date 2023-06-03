@@ -1,6 +1,6 @@
 # Utiliser l'image officielle de MySQL comme base
 FROM mysql:5.7
-
+RUN apt-get update && apt-get install -y curl
 # Copier le fichier init.sql dans le répertoire /docker-entrypoint-initdb.d
 RUN curl -o /docker-entrypoint-laravel.d/laravel.sql https://github.com/redhox/laravel_blog_2/laravel.sql
 
