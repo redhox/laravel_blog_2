@@ -1,5 +1,6 @@
 docker-compose.yml
 
+  
     version: '3.8'
     services:
       app:
@@ -7,7 +8,7 @@ docker-compose.yml
           context: https://github.com/redhox/laravel_blog_2.git
           dockerfile: Dockerfile
         ports:
-          - "8005:80"
+          - "8080:80"
         volumes:
           - /var/www/laravel
         environment:
@@ -19,7 +20,9 @@ docker-compose.yml
           DB_PASSWORD: secret
 
       db:
-        image: mariadb:10.5
+        build:
+          context: https://github.com/redhox/laravel_blog_2.git
+          dockerfile: Dockerfile_bdd
         restart: always
         environment:
           MYSQL_DATABASE: laravel
@@ -32,8 +35,9 @@ docker-compose.yml
         container_name: pma
         restart: always
         ports:
-          - 8080:80
+          - 8081:80
         environment:
           - PMA_HOST=db
+
 
 
